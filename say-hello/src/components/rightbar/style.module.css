@@ -1,3 +1,57 @@
-.rightbar{
-    flex: 4.5;
+.rightbar {
+  flex: 3.5;
+  padding: 1rem;
+}
+.rightbarWrapper {
+  padding: 1rem;
+}
+.birthdayFirend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+.giftFrinedImg {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.freindName {
+  font-size: 14px;
+}
+.adImg {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.frindsOnline{
+    margin: 20px 0px;
+    font-weight: 500;
+}
+.onlineFriendsItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.onlineFriendsContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 0.5rem;
+}
+.onlineFriendsImg {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.online {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(75, 194, 75);
+  border: 2px solid white;
+  position: absolute;
+  top: -2%;
+  right: 51%;
 }
