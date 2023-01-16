@@ -12,6 +12,8 @@ import {
   School,
   WorkOutline,
 } from "@material-ui/icons";
+import Friends from "../friends/Friends";
+import {Users} from '../../staticData'
 const Sidebar = () => {
   return (
     <div className={styles.sidebar}>
@@ -66,130 +68,12 @@ const Sidebar = () => {
         <button className={styles.btnShow}>Show More</button>
         <hr />
         <ul className={styles.sidebarFriendList}>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
-
-          <li className={styles.sidebarFriendListItem}>
-            <img
-              src="/assests/person/1.jpeg"
-              alt=""
-              className={styles.friendImg}
-            />
-            <span className={styles.firendName}>Maram</span>
-          </li>
+        {
+          Users.map((user) =>(
+            <Friends user={user} />
+          ))
+        }
+       
         </ul>
       </div>
     </div>

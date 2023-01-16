@@ -1,5 +1,7 @@
 import React from "react";
+import Online from "../online/Online";
 import styles from "./style.module.css";
+import {Users} from '../../staticData.js'
 
 const Rightbar = () => {
   return (
@@ -9,83 +11,33 @@ const Rightbar = () => {
           <img
             src="/assests/gift.png"
             alt=""
-            className={styles.giftFrinedImg}
+            className={styles.giftFriendsImg}
           />
-          <p className={styles.freindName}>
+          <p className={styles.friendName}>
             {" "}
-            <b> Ayha</b> and <b> 3 other firends</b> birthay to day{" "}
+            <b> Ayha</b> and <b> 3 other friends</b> have a birthday to day{" "}
           </p>
         </div>
-        <div className={styles.ads}>
+    
           <img src="/assests/ad.png" alt="" className={styles.adImg} />
-        </div>
+     
 
         <h4 className={styles.frindsOnline}>Online Friends</h4>
 
         <ul className="onlineFriendsList">
-          <li className={styles.onlineFriendsItem}>
+          {/* <li className={styles.onlineFriendsItem}>
             <div className={styles.onlineFriendsContainer}>
               <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
               <span className={styles.online}></span>
               <span>Ayha</span>
             </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
-          <li className={styles.onlineFriendsItem}>
-            <div className={styles.onlineFriendsContainer}>
-              <img src="/assests/person/1.jpeg" alt="" className={styles.onlineFriendsImg}/>
-              <span className={styles.online}></span>
-              <span>Ayha</span>
-            </div>
-          </li>
+          </li> */}
+          {
+            Users.map((user)=>(
+              <Online user={user}/>
+            ))
+          }
+      
         </ul>
       </div>
     </div>
