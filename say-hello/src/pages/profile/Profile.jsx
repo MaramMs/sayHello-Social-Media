@@ -14,24 +14,27 @@ const Profile = () => {
         <div className={styles.rightProfile}>
           <div className={styles.topRightProfile}>
             <div className={styles.profileImgCover}>
-                <img src="/assests/posts/3.jpeg" alt=""  className={styles.coverImg}/>
-                <img src="/assests/person/2.jpeg" alt="" className={styles.profileImg}/>
+              <img
+                src="/assests/posts/3.jpeg"
+                alt=""
+                className={styles.coverImg}
+              />
+              <img
+                src="/assests/person/2.jpeg"
+                alt=""
+                className={styles.profileImg}
+              />
             </div>
           </div>
 
           <div className={styles.profileInfo}>
-            <span className={styles.userName}>
-maram
-            </span>
-            <span className={styles.userDesc}>
-i'm here
-            </span>
+            <span className={styles.userName}>maram</span>
+            <span className={styles.userDesc}>i'm here</span>
           </div>
           <div className={styles.bottomRightProfile}>
-          <Feed />
-          <Rightbar />
+            <Feed />
+            <Rightbar profile />
           </div>
-      
         </div>
       </div>
     </>
